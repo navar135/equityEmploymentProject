@@ -1,0 +1,15 @@
+Codebook – Created 11/17/2021
+Dataset: ACSPUMS1Y2019
+
+Variables: 
+PWGTP - PUMS person weight
+
+
+PWGTP - PUMS person weight
+Topics: 
+Description : 
+PUMS person weight Variable Universe Description: ALL<br>Valid Range: 1 to 9,999
+Values: 
+1,9999 - Continuous values of PWGTP
+
+
