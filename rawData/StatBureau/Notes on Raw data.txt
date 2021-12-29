@@ -1,0 +1,3 @@
+In order to clean this dataset we have to go through every series id listed in the following link (https://beta.bls.gov/dataViewer/view/8557bf4914a64d34b80e947dda69a486) and renaming it by what the value stands for. For example “LNU00075409” should be relabeled as “Population - with no disability, Men”. 
+
+The data we are currently uses does not filter for specific races or occupations. This is possible to look into at this site (https://beta.bls.gov/dataQuery/find?st=0&r=100&q=disability&fq=cg:[Unemployment+and+Labor+Force+Status]&more=0&fq=cg:[Occupation])
