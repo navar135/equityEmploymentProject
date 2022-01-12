@@ -38,15 +38,22 @@ for i in range(len(df)):
 #add the completed list as a column in our dataframe
 df['Category']=category 
 #find all the unique categories so we can plot them
-uniVar = df['Category'].unique()
-#make two subset dataframes that can be easily plotted
-popNoDis =df[df['Category']==uniVar[0]]#population with no disability
-popDis = df[df['Category']==uniVar[1]] #population with disability
+uniVar = list(idDict.values())
+#remove dataset without a pair 
+df =df[df['Category']!=uniVar[6]]#Employed - With a disability, Men
+uniVar.remove('Employed - With a disability, Men')
 #initial plots of our data 
 #plot the populations
-pop = plt.figure()
-plt.plot(popNoDis['Year'],popNoDis['Value'], color ='maroon')
-plt.plot(popDis['Year'],popDis['Value'], color ='blue')
+for i in range(len(uniVar)):
+    if i%2==0:
+        noDis =df[df['Category']==uniVar[i]]#population with no disability
+        dis = df[df['Category']==uniVar[i+1]] #population with disability
+        pop = plt.figure()
+        plt.plot(noDis['Year'],noDis['Value'], color ='maroon', label =uniVar[i])
+        plt.plot(dis['Year'],dis['Value'], color ='blue', label =uniVar[i+1])
+        plt.legend()
+        label = uniVar[i]+ ' vs. '+ uniVar[i+1]
+        plt.title(label)
+        plt.show()
 
-plt.show()
  
