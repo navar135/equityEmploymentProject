@@ -9,7 +9,7 @@
 - [Data Source](##Data-Source)
 
 ## Project Objective
-- The aim of our project is to demonstrate that inaccessibility of e-commerce websites is hindering their revenue.
+- The aim of our project is to demonstrate that inaccessibility of e-commerce websites is hindering the revenue of these sites. We us the WebAim Million dataset to characterize the accessibility rank of the top e-commerce sites and find the most common error in the top 16 most popular e-commerce platforms. We use U.S. census data to estimate possible revenue loss by e-commerce companies. We conclude that e-commerce sites are some of the least accessible sites and conclude that a small change in the most common errors by e-commerce platforms could lead to higher accessibility of all its dependent domain sites. 
 
 ## Methods Used
 - Data Cleaning
